@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <title>Hello, world!</title>
+    
+  </head>
+  <body class="bg">
+        <!--********************************************************nav starts************************************************************************-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top opacity-5">
+      <div class="container"> 
+       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img height="50px" width="100px" src="data:image/png;base64,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" alt="">
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+   
+          </ul>
+          <form class="form-inline my-2 my-lg-0 ">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-dark  my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+
+    </nav>
+        <!--********************************************************nav ends************************************************************************-->
+
+        <!--********************************************************sidebar starts************************************************************************-->
+        
+    <div class="sidebar bişi text-light text-lg renk ">
+       <h4>
+        <a class="renk" href="https://www.youtube.com/" target="_blank">Home</a>
+        <br>
+        <a  class="renk" href="https://www.youtube.com/feed/explore"target="_blank">Explore</a>
+        <br>
+        <a  class="renk" href="https://www.youtube.com/feed/subscriptions"target="_blank">Sub</a>
+        <br>
+        <hr>
+        <a  class="renk" href="https://www.youtube.com/feed/library"target="_blank">Library</a>
+        <br>
+        <a  class="renk" href="https://www.youtube.com/feed/history"target="_blank">History</a>
+        <br>
+        <a  class="renk" href="https://studio.youtube.com/channel/UCsGVoxLS36p31jCjcvMZ0mw/videos"target="_blank">Your videos</a>
+        <br>
+        <a  class="renk" href="https://www.youtube.com/playlist?list=WL"target="_blank">Watch later</a>
+        <br>
+        <a  class="renk" href="https://www.youtube.com/feed/clips"target="_blank">Your clips</a>
+        <hr>
+        <br>
+
+        <a  class="renk" href="https://www.youtube.com/feed/subscriptions"target="_blank">Subs
+          <hr>
+          <br>
+    
+        </a>
+      </h4>
+      <h5>
+        <a  class="renk" href="https://www.youtube.com/account"target="_blank">Settings</a>
+        <br>
+        <a  class="renk" href="https://www.youtube.com/reporthistory"target="_blank">Reporthistory</a>
+        <br>
+        <a  class="renk" href="#contact"target="_blank">Help</a>
+        <br>
+        <a  class="renk" href="#contact"target="_blank">Sendfeedback</a>
+        <br>
+      
+      </h5>
+        
+       
+        
+        
+      
+      
+    </div>
+       <!--********************************************************sidebar ends************************************************************************-->
+     
+    
+        
+            <div class="container mt-5 mx-auto ">
+              <div class="row">
+                  <div class="col3">
+                    <div class="card bg text-light mr-5" style="width: 14rem; height: fit-content; ">
+                      <img src="https://picsum.photos/id/13/286/286" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col3">
+                    <div class="card bg               text-light mr-5" style="width: 14rem; height: fit-content; ">
+                      <img src="https://picsum.photos/id/11/286/286" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col3">
+                    <div class="card bg              text-light mr-5" style="width: 14rem; height: fit-content;">
+                      <img src="https://picsum.photos/id/41/286/286" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col3">
+                    <div class="card             text-light bg" style="width: 14rem; height: fit-content;">
+                      <img src="https://picsum.photos/id/41/286/286" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                 
+              
+                
+              </div>
+            </div>
+            <div class="container mt-5 mx-auto ">
+              <div class="row">
+                  <div class="col3">
+                    <div class="card            text-light bg mr-5" style="width: 14rem; height: fit-content;">
+                      <img src="https://picsum.photos/id/49/286/286" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col3">
+                    <div class="card           text-light bg mr-5" style="width: 14rem; height: fit-content;">
+                      <img src="https://picsum.photos/id/45/286/286" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col3">
+                    <div class="card          text-light bg mr-5" style="width: 14rem;height: fit-content; ">
+                      <img src="https://picsum.photos/id/13/286/286" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col3">
+                    <div class="card         text-light bg" style="width: 14rem;height: fit-content; ">
+                      <img src="https://picsum.photos/id/36/286/286" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                 
+              
+                
+              </div>
+            </div>
+            <div class="container mt-5 mx-auto ">
+              <div class="row">
+                  <div class="col3">
+                    <div class="card        text-light bg mr-5" style="width: 14rem; height: fit-content;">
+                      <img src="https://picsum.photos/id/98/286/286" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col3">
+                    <div class="card       text-light bg mr-5" style="width: 14rem; height: fit-content;">
+                      <img src="https://picsum.photos/id/13/286/286" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col3">
+                    <div class="card      text-light bg mr-5" style="width: 14rem;height: fit-content;">
+                      <img src="https://picsum.photos/id/77/286/286" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col3">
+                    <div class="card     text-light bg" style="width: 14rem;height: fit-content;">
+                      <img src="https://picsum.photos/id/78/286/286" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                 
+              
+                
+              </div>
+            </div>
+            <div class="container mt-5 mx-auto ">
+              <div class="row">
+                  <div class="col3">
+                    <div class="card    text-light bg mr-5" style="width: 14rem;height: fit-content;">
+                      <img src="https://picsum.photos/id/13/286/286" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col3">
+                    <div class="card   text-light bg mr-5" style="width: 14rem;height: fit-content;">
+                      <img src="https://picsum.photos/id/13/286/286" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col3">
+                    <div class="card  text-light bg mr-5" style="width: 14rem;height: fit-content; ">
+                      <img src="https://picsum.photos/id/11/286/286" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col3">
+                    <div class="card text-light bg" style="width: 14rem; height: fit-content;">
+                      <img src="https://picsum.photos/id/41/286/286" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                 
+              
+                
+              </div>
+            </div>
+            
+    
+   
+
+  
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
